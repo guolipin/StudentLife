@@ -4,4 +4,4 @@ The python verison for this code is 3.10.13. For environment, please refer to en
 
 ## Description
 ### results
-For time serise plots, please check results.
+For time serise plots, please check results. Please modify the data path in the .ipynb files.
