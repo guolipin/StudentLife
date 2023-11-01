@@ -1,0 +1,38 @@
+uid,PerceivedStressScale_pre,PerceivedStressScale_post,PerceivedStressScale_delta,PerceivedStressScale_pre_severity,PerceivedStressScale_post_severity
+u19,16,27,11,Moderate stress,High preceived stress
+u03,9,18,9,Low stress,Moderate stress
+u02,19,27,8,Moderate stress,High preceived stress
+u00,26,19,7,Moderate stress,Moderate stress
+u43,25,19,6,Moderate stress,Moderate stress
+u09,17,23,6,Moderate stress,Moderate stress
+u15,22,17,5,Moderate stress,Moderate stress
+u42,20,15,5,Moderate stress,Moderate stress
+u14,19,24,5,Moderate stress,Moderate stress
+u32,17,22,5,Moderate stress,Moderate stress
+u51,16,20,4,Moderate stress,Moderate stress
+u49,24,20,4,Moderate stress,Moderate stress
+u05,21,17,4,Moderate stress,Moderate stress
+u20,20,24,4,Moderate stress,Moderate stress
+u35,22,18,4,Moderate stress,Moderate stress
+u30,23,20,3,Moderate stress,Moderate stress
+u46,25,28,3,Moderate stress,High preceived stress
+u53,25,22,3,Moderate stress,Moderate stress
+u54,21,24,3,Moderate stress,Moderate stress
+u27,20,23,3,Moderate stress,Moderate stress
+u59,24,21,3,Moderate stress,Moderate stress
+u23,27,24,3,High preceived stress,Moderate stress
+u16,28,30,2,High preceived stress,High preceived stress
+u04,19,21,2,Moderate stress,Moderate stress
+u24,20,18,2,Moderate stress,Moderate stress
+u36,18,16,2,Moderate stress,Moderate stress
+u44,16,18,2,Moderate stress,Moderate stress
+u33,23,25,2,Moderate stress,Moderate stress
+u52,26,25,1,Moderate stress,Moderate stress
+u10,26,25,1,Moderate stress,Moderate stress
+u01,21,22,1,Moderate stress,Moderate stress
+u18,25,26,1,Moderate stress,Moderate stress
+u17,27,26,1,High preceived stress,Moderate stress
+u47,20,20,0,Moderate stress,Moderate stress
+u07,24,24,0,Moderate stress,Moderate stress
+u34,20,20,0,Moderate stress,Moderate stress
+u56,19,19,0,Moderate stress,Moderate stress

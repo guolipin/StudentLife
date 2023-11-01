@@ -1,0 +1,34 @@
+uid,PHQ-9_pre,PHQ-9_post,PHQ-9_delta,PHQ-9_pre_severity,PHQ-9_post_severity
+u02,13,5,8,Moderate depression,Mild depression
+u23,11,19,8,Moderate depression,Moderately severe depression
+u49,2,8,6,Minimal depression,Mild depression
+u16,6,12,6,Mild depression,Moderate depression
+u31,10,5,5,Moderate depression,Mild depression
+u17,13,18,5,Moderate depression,Moderately severe depression
+u45,7,2,5,Mild depression,Minimal depression
+u47,5,1,4,Mild depression,Minimal depression
+u58,5,8,3,Mild depression,Mild depression
+u53,8,11,3,Mild depression,Moderate depression
+u43,7,4,3,Mild depression,Minimal depression
+u34,3,6,3,Minimal depression,Mild depression
+u27,5,7,2,Mild depression,Mild depression
+u52,12,14,2,Moderate depression,Moderate depression
+u32,4,2,2,Minimal depression,Minimal depression
+u59,5,7,2,Mild depression,Mild depression
+u18,13,11,2,Moderate depression,Moderate depression
+u03,2,4,2,Minimal depression,Minimal depression
+u04,6,8,2,Mild depression,Mild depression
+u09,4,2,2,Minimal depression,Minimal depression
+u15,3,1,2,Minimal depression,Minimal depression
+u24,5,7,2,Mild depression,Mild depression
+u01,5,4,1,Mild depression,Minimal depression
+u56,2,3,1,Minimal depression,Minimal depression
+u07,7,8,1,Mild depression,Mild depression
+u44,1,2,1,Minimal depression,Minimal depression
+u19,4,3,1,Minimal depression,Minimal depression
+u42,1,0,1,Minimal depression,Unknown
+u36,2,1,1,Minimal depression,Minimal depression
+u33,23,24,1,Severe depression,Severe depression
+u00,2,3,1,Minimal depression,Minimal depression
+u35,7,7,0,Mild depression,Mild depression
+u20,8,8,0,Mild depression,Mild depression

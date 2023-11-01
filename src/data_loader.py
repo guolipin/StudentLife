@@ -1,3 +1,6 @@
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 import os
 import numpy as np
 import pandas as pd
@@ -37,7 +40,6 @@ def data_reader(dir_path, col_names=None):
         df = handle_timestamp(df, columns)
 
         # deal with NaN value
-        # df.fillna('', inplace=True)
         df.replace(np.nan, '',inplace=True)
         
         uid_names.append(name)
@@ -114,16 +116,3 @@ def handle_timestamp(df,columns):
         # set timestamp as index
         df.set_index('start',inplace=True)
     return df
-
-# def map_categorical_column_to_numbers(df, column_name):
-#     # Get unique values from the specified column
-#     unique_values = df[column_name].unique()
-    
-#     # Create a mapping from unique values to numbers
-#     value_to_number = {value: number for number, value in enumerate(unique_values)}
-    
-#     # Create a new column by mapping the specified column to numbers
-#     new_column_name = f'{column_name}_num'
-#     df[new_column_name] = df[column_name].map(value_to_number)
-    
-#     return df
