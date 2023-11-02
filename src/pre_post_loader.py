@@ -43,20 +43,21 @@ def get_pre_post_difference(pre_df, post_df, cols, name):
     sum2 = post_df.loc[: ,cols].copy().sum(axis=1).tolist()
     print('Check uid matching in the pre and post df:', pre_df['uid'].tolist() == post_df['uid'].tolist())
     diff_df = pd.DataFrame({f'{name}_pre':sum1, f'{name}_post':sum2}, index=pre_df['uid'])
-    diff_df[f'{name}_delta'] = abs(diff_df[f'{name}_post'] - diff_df[f'{name}_pre'])
+    diff_df[f'{name}_delta'] = diff_df[f'{name}_post'] - diff_df[f'{name}_pre']
     diff_df.to_csv(f'../results/{name}.csv')
-    diff_df.sort_values(by=[f'{name}_delta'],ascending=False, inplace=True)
+    # diff_df.sort_values(by=[f'{name}_delta'],ascending=False, inplace=True)
     return diff_df
 
 def get_pos_neg_difference(pre_df, post_df, pos, neg,name):
     pos_sum1 = pre_df.loc[:, pos].copy().sum(axis=1).tolist()
-    neg_sum1 = pre_df.loc[:, neg].copy().sum(axis=1).tolist()
+    neg_sum1 = pre_df.loc[:, neg].copy().sum(axis=1).apply(lambda x:-x).tolist()
     pos_sum2 = post_df.loc[: ,pos].copy().sum(axis=1).tolist()
-    neg_sum2 = post_df.loc[: ,neg].copy().sum(axis=1).tolist()
+    neg_sum2 = post_df.loc[: ,neg].copy().sum(axis=1).apply(lambda x:-x).tolist()
     print('Check uid matching in the pre and post df:', pre_df['uid'].tolist() == post_df['uid'].tolist())
     diff_df = pd.DataFrame({f'{name}_pos_pre':pos_sum1, f'{name}_neg_pre':neg_sum1, f'{name}_pos_post':pos_sum2,f'{name}_neg_post':neg_sum2}, index=pre_df['uid'])
-    diff_df[f'{name}_pos_delta'] = abs(diff_df[f'{name}_pos_post'] - diff_df[f'{name}_pos_pre'])
-    diff_df[f'{name}_neg_delta'] = abs(diff_df[f'{name}_neg_post'] - diff_df[f'{name}_neg_pre'])
+    diff_df[f'{name}_pos_delta'] = diff_df[f'{name}_pos_post'] - diff_df[f'{name}_pos_pre']
+    diff_df[f'{name}_neg_delta'] = diff_df[f'{name}_neg_post'] - diff_df[f'{name}_neg_pre']
+    diff_df[f'{name}_delta'] = diff_df[f'{name}_pos_delta'] + diff_df[f'{name}_neg_delta']
     diff_df.to_csv(f'../results/{name}.csv')
     return diff_df
 
